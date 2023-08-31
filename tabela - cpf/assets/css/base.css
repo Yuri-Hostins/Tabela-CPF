@@ -1,0 +1,61 @@
+@import url("reset.css");
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:700|Roboto:300');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url("conteudo/menu.css");
+@import url("conteudo/formulario.css");
+@import url("conteudo/botoes.css");
+
+::selection {
+  color: var(--branco);
+  background: var(--vermelho);
+}
+
+:root {
+  --branco: #fff;
+  --color-link: #F94C10;
+  
+  --cor-de-fundo: #EBECEE;
+  --branco: #FFFFFF;
+  --laranja: #EB9B00;
+  --azul: #002F52;
+  --preto: #000000;
+  --cinza: #474646;
+  --cinza-claro: #858585;
+  --vermelho: #D94937;
+}
+
+body {
+  font-family: 'Montserrat';
+  font-size: 16px;
+  line-height: 1.75;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+  background-image: linear-gradient(#4A4A4A, #212121), url('../img/');
+}
+
+.container-conteudo{
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+hr{
+  width: 60vh;
+  border-bottom: 1px solid var(--branco);
+  margin-bottom: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+@media screen and (max-width: 650px){
+  hr{
+    width: 20vh;
+    max-width: 30vh;
+    border-bottom: 1px solid var(--branco);
+    margin-bottom: 1.25rem;
+    margin-top: 1.25rem;
+  }
+
+}

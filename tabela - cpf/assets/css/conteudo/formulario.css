@@ -1,0 +1,29 @@
+.etiqueta-campo {
+  display: block;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--azul);
+  margin-left: 1em;
+}
+
+.campo-escrita {
+  border: 1px solid var(--azul);
+  border-radius: 24px;
+  padding: 1em;
+  width: 100%;
+}
+
+.campo-formulario {
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.formulario-dupla {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.mensagem-erro{
+  color: var(--vermelho);
+}

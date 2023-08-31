@@ -1,93 +1,114 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
   <head>
-		<!-- Tags Metas -->
+    <!-- Tags Metas -->
 
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-		<!-- Links -->
+    <!-- Links -->
 
-		
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="shortcut icon" href="assets/img/favicon/favicon.png" />
 
-		<!-- Script -->
+    <!-- Script -->
 
+    
 
-		<!-- Título -->
-  <title>Tabela | CPF</title>
+    <!-- Título -->
+    <title>Tabela - CPF</title>
   </head>
+
   <body>
-      <section>
-        <div>
-          <a href="#">Mapa</a>
-          <a href="#">Copiar</a>
+    <section class="menu">
+      <div class="container-conteudo">
+        <div class="container-botoes">
+          <a class="botao" id="mapa" href="#">Mapa</a>
+          <h1 class="titulo-menu">Tabela - CEP</h1>
+          <a class="botao" id="copiar" href="#">Copiar</a>
+        </div>
+        
+        <hr/>
+
+        <div class="campo-formulario">
+          <label class="etiqueta-campo" for="cep">CEP</label>
+          <input name="cep" id="cep" class="campo-escrita" required />
+          <div id="erro"></div>
+        </div>
+        
+        <hr>
+
+        <div class="campo-formulario">
+          <label class="etiqueta-campo" for="logradouro">Logradouro</label>
+          <input name="logradouro" id="logradouro" class="campo-escrita" required />
         </div>
 
-        <div>
-          <div>
-            <label for="cep">CEP</label>
-            <input required />
-        </div>
+        <hr/>
 
-        <div>
-            <label>Endereço</label>
-            <input required />
-        </div>
-        <div>
-            <div>
-                <label>DDD</label>
-                <input required />
-            </div>
-            <div>
-                <label>Complemento</label>
-                <input required />
-            </div>
-        </div>
-        <div>
-            <label>Bairro</label>
-            <input required />
-        </div>
-        <div>
-            <div>
-                <label>Cidade</label>
-                <input required />
-            </div>
+        <div class="formulario-dupla">
+          
+          <div class="campo-formulario">
+            <label class="etiqueta-campo" for="bairro">Bairro</label>
+            <input name="bairro" id="bairro" class="campo-escrita" required />
+          </div>
+          
+          <div class="campo-formulario">
+            <label class="etiqueta-campo" for="localidade">Localidade</label>
+            <input name="localidade" id="localidade" class="campo-escrita" required />
+          </div>
+        </div>  
+        
+        <hr/>
+        
+        <div class="campo-formulario">
+          <label class="etiqueta-campo" for="ibge">IBGE</label>
+          <input name="ibge" id="ibge" class="campo-escrita" />
+        </div>    
 
-            <div>
-                <label>UF</label>
-                <select>
-                    <option>Acre</option>
-                    <option>Alagoas</option>
-                    <option>Amapá</option>
-                    <option>Amazonas</option>
-                    <option>Bahia</option>
-                    <option>Ceará</option>
-                    <option>Distrito Federal</option>
-                    <option>Espírito Santo</option>
-                    <option>Goiás</option>
-                    <option>Maranhão</option>
-                    <option>Mato Grosso</option>
-                    <option>Mato Grosso do Sul</option>
-                    <option>Minas Gerais</option>
-                    <option>Pará</option>
-                    <option>Paraíba</option>
-                    <option>Paraná</option>
-                    <option>Pernambuco</option>
-                    <option>Piauí</option>
-                    <option>Rio de Janeiro</option>
-                    <option>Rio Grande do Norte</option>
-                    <option>Rio Grande do Sul</option>
-                    <option>Rondônia</option>
-                    <option>Roraima</option>
-                    <option>Santa Catarina</option>
-                    <option>São Paulo</option>
-                    <option>Sergipe</option>
-                    <option>Tocantins</option>
-                    <option>Estrangeiro</option>
-                </select>
-            </div>
+        <hr/>
+
+        <div class="formulario-dupla">
+          <div class="campo-formulario">
+            <label class="etiqueta-campo" for="ddd">DDD</label>
+            <input name="ddd" id="ddd" class="campo-escrita" required />
+          </div>
+          <div class="campo-formulario">
+            <label class="etiqueta-campo" for="uf">UF</label>
+            <select id="uf" name="uf" class="campo-escrita">
+              <option value="AC">Acre</option>
+              <option value="AL">Alagoas</option>
+              <option value="AP">Amapá</option>
+              <option value="AM">Amazonas</option>
+              <option value="BA">Bahia</option>
+              <option value="CE">Ceará</option>
+              <option value="DF">Distrito Federal</option>
+              <option value="ES">Espírito Santo</option>
+              <option value="GO">Goiás</option>
+              <option value="MA">Maranhão</option>
+              <option value="MT">Mato Grosso</option>
+              <option value="MS">Mato Grosso do Sul</option>
+              <option value="MG">Minas Gerais</option>
+              <option value="PA">Pará</option>
+              <option value="PB">Paraíba</option>
+              <option value="PR">Paraná</option>
+              <option value="PE">Pernambuco</option>
+              <option value="PI">Piauí</option>
+              <option value="RJ">Rio de Janeiro</option>
+              <option value="RN">Rio Grande do Norte</option>
+              <option value="RS">Rio Grande do Sul</option>
+              <option value="RO">Rondônia</option>
+              <option value="RR">Roraima</option>
+              <option value="SC">Santa Catarina</option>
+              <option value="SP">São Paulo</option>
+              <option value="SE">Sergipe</option>
+              <option value="TO">Tocantins</option>
+              <option value="EX">Estrangeiro</option>
+            </select>
+          </div>
         </div>
-      </section>
+      </div>
+    </section>
   </body>
 </html>

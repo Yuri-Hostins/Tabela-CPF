@@ -1,0 +1,36 @@
+.container-botoes {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.botao{
+  margin: 2rem 0 0rem 0;
+  padding: 10px;
+  border-radius: 10%;
+  box-shadow: 0 20px 20px -17px #33333380;
+  color: var(--branco);
+}
+
+#copiar{
+  background-color: #0000ff;
+  transition: 0.5s ease-in-out;
+}
+
+#copiar:hover,
+#copiar:focus,
+#copiar:active{
+  background-color: #020281;
+  transition: 0.5s ease-in-out;
+}
+
+#mapa{
+  background-color: #01aa01;
+  transition: 0.5s ease-in-out;
+}
+
+#mapa:hover,
+#mapa:focus,
+#mapa:active{
+  background-color: #008000;
+  transition: 0.5s ease-in-out;
+}
