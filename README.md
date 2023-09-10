@@ -1,5 +1,5 @@
 # Tabela de CEP
-> Status do projeto: Em desenvolvimento
+> Status do projeto: Finalizado
 
 ## Descrição
 Este é um projeto que permite aos usuários inserirem um CEP e obter informações relacionadas a ele, como logradouro, bairro, localidade, IBGE, DDD e UF. Além disso, oferece a funcionalidade de abrir um mapa com base no CEP inserido e copiar todas as informações dos campos para a área de transferência.
