@@ -16,6 +16,8 @@
     <!-- Script -->
 
     <script src="assets/js/tabela-cep.js" defer></script>
+    <script src="assets/js/mapa.js" defer></script>
+    <script src="assets/js/copiar.js" defer></script>
 
     <!-- Título -->
     <title>Tabela - CEP</title>
@@ -25,16 +27,16 @@
     <section class="menu">
       <div class="container-conteudo">
         <div class="container-botoes">
-          <a class="botao" id="mapa" href="#">Mapa</a>
+          <a class="botao" id="mapa" href="#" onclick="abrirMapa()">Mapa</a>
           <h1 class="titulo-menu">Tabela - CEP</h1>
-          <a class="botao" id="copiar" href="#">Copiar</a>
+          <a class="botao" id="copiar" href="#" onclick="copiarInformacoes()">Copiar</a>
         </div>
         
         <hr/>
 
         <div class="campo-formulario">
           <label class="etiqueta-campo" for="cep">CEP</label>
-          <input name="cep" id="cep" class="campo-escrita" required />
+          <input name="cep" id="cep" class="campo-escrita" placeholder="Ex: 89037-693" required />
           <div id="erro"></div>
         </div>
         

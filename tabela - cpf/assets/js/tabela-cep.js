@@ -1,7 +1,7 @@
 async function buscaEndereco(cep){
   var mensagemErro = document.getElementById('erro');
   mensagemErro.innerHTML = "";
-  try{
+  try{ // try = tendar, "try" é usado para envolver código onde erros podem ocorrer e que deve ser seguido por "catch" para tratá-los.
     var consultaCEP = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
     var consultaCEPConvertida = await consultaCEP.json();
     if(consultaCEPConvertida.erro){
